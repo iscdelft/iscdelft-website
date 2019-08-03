@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import Layout from '../components/Layout'
 import logo from '../img/logo.svg'
@@ -20,30 +19,12 @@ export const IndexPageTemplate = () => (
   </div>
 )
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-
+const IndexPage = () => {
   return (
     <Layout>
-      <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      />
+      <IndexPageTemplate />
     </Layout>
   )
-}
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 }
 
 export default IndexPage
