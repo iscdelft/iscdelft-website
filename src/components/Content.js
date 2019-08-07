@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import background from '../img/background.png'
+import back2 from '../img/back2.png'
+import back3 from '../img/back3.png'
 
 export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 )
 
-const Content = ({ className, children }) => (
+const Content = ({ children, landing }) => (
   <div
-    className={className}
+    className="landing-background"
     style={{
-      backgroundImage: `URL(${background})`,
+      backgroundImage: `URL(${landing ? back2 : back3})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top"
     }}

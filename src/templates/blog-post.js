@@ -83,7 +83,6 @@ export const BlogPostTemplate = ({
 };
 
 const BlogPost = ({ data }) => {
-  console.log(data.markdownRemark.frontmatter.featuredimage.childImageSharp.sizes)
   return (
     <Layout>
       <BlogPostTemplate

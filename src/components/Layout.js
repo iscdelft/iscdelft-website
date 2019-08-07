@@ -7,7 +7,7 @@ import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, landing }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -56,7 +56,7 @@ const TemplateWrapper = ({ children }) => {
           <p>STUDENT CHAPLAINCY</p>
         </div>
       </div>
-      <Content>{children}</Content>
+      <Content landing={landing}>{children}</Content>
       <Footer />
     </div>
   )
