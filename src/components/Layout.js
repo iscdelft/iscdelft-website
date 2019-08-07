@@ -19,24 +19,24 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix("/")}img/apple-touch-icon.png`}
+          href={`${withPrefix("/")}img/apple-touch-icon.png?v=2`}
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-32x32.png`}
+          href={`${withPrefix("/")}img/favicon-32x32.png?v=2`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-16x16.png`}
+          href={`${withPrefix("/")}img/favicon-16x16.png?v=2`}
           sizes="16x16"
         />
 
         <link
           rel="mask-icon"
-          href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+          href={`${withPrefix("/")}img/safari-pinned-tab.svg?v=2`}
           color="#6f89e4"
         />
         <link rel="manifest" href={`${withPrefix("/")}config/site.webmanifest`} />
@@ -46,7 +46,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="organisation" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content={`${withPrefix("/")}img/favicon-32x32.png`} />
+        <meta property="og:image" content={`${withPrefix("/")}img/favicon-32x32.png?v=2`} />
       </Helmet>
       <Navbar />
       <div className="side-text">
