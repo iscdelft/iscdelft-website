@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 2016 National Summer Retreat Weekend - Sources of Inspiration
-featuredimage: /img/wheel.jpeg
+featuredimage: /img/featureheiloo.png
 featuredpost: false
 date: 2016-12-17T15:04:10.000Z
 author: Mathew Jose Alani
