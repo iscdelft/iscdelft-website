@@ -22,7 +22,7 @@ const Contact = () => (
       <div className="contact-get-there">
         <div className="contact-address">
           <p>Our Sunday services are at 11:30 in the morning</p>
-          <p>Raamstraat 8</p>
+          <p>Raamstraat 78</p>
           <p>Delft</p>
         </div>
         <a href="https://www.google.com/maps/place/Raamstraat+8,+2613+SC+Delft/@52.0065548,4.3528904,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5b5c0cc59782d:0x20c7730917f5d3cc!8m2!3d52.0065515!4d4.3550791" target="__blank" alt="raamstraat 8" style={{
