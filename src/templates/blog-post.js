@@ -15,7 +15,7 @@ export const BlogPreview = ({ post }) => {
     <div className="blog__detailed-author" style={{margin: "20px 0px"}}>
       <img className="author-image inline" src={post.fields.author.frontmatter.photo.publicURL} alt={post.fields.author.frontmatter.title} />
       <p className="inline text-bold keep-margin details-smaller">{post.fields.author.frontmatter.title}</p>
-      <p className="inline text-bold keep-margin details-smaller">{post.timeToRead} mins read</p>
+      <p className="inline text-bold keep-margin details-smaller">{post.timeToRead} min read</p>
     </div>
   </div>
 }
@@ -36,7 +36,7 @@ export const BlogPostTemplate = ({
   const facebookShare = `http://www.facebook.com/sharer/sharer.php?u=#url&t=${title}`
   return (
       <div className="container is-fluid">
-        <div className="spacer" />
+        <div className="spacer-md" />
         <div className="blog__detailed-container">
           <img src={image} alt={title} />
           <p className="blog__detailed-title">{title}</p>
@@ -53,7 +53,7 @@ export const BlogPostTemplate = ({
               />
               <p className="inline">{author.frontmatter.title}</p>
             </div>
-            <p>{time} mins read</p>
+            <p>{time} min read</p>
             <p>{date}</p>
           </div>
           <div className="blog__detailed-description" dangerouslySetInnerHTML={{__html: html}} />

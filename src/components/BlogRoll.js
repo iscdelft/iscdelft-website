@@ -18,7 +18,7 @@ const Article = ({ article }) => (
         alt=""
       />
       <p className="text-bold">{article.fields.author.frontmatter.title}</p>
-      <p>{article.timeToRead} mins read</p>
+      <p>{article.timeToRead} min read</p>
     </div>
   </div>
 );

@@ -26,7 +26,7 @@ class UsefulLinks extends React.Component {
           className="container contain-wide-text"
           style={{ marginBottom: "400px" }}
         >
-          <div className="spacer" />
+          <div className="spacer-md" />
           <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
             <SplitTitle title="Useful links" />
             <Search title="Search links" action={(term) => this.setState({ search: term })} />

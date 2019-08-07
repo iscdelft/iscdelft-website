@@ -13,7 +13,7 @@ const Article = ({ article }) => (
     <div className="article-info">
       <img className="author-image" src={article.fields.author.frontmatter.photo.publicURL} alt="" />
       <p className="text-bold">{article.fields.author.frontmatter.title}</p>
-      <p>{article.timeToRead} mins read</p>
+      <p>{article.timeToRead} min read</p>
     </div>
   </div>
 )
