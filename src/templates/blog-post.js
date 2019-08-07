@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Img from 'gatsby-image'
 import Layout from "../components/Layout";
 import "./blog-post.sass";
 
@@ -11,7 +12,7 @@ import SplitTitle from "../components/SplitTitle";
 export const BlogPreview = ({ post }) => {
   return <div className="blog__preview-container">
     <p className="blog__preview-title">{post.frontmatter.title}</p>
-    <p className="blog__preview-excerpt">{post.excerpt} <a href={`http://localhost:8000${post.fields.slug}`}>Read more</a></p>
+    <p className="blog__preview-excerpt">{post.excerpt} <a href={`https://www.iscdelft.nl${post.fields.slug}`}>Read more</a></p>
     <div className="blog__detailed-author" style={{margin: "20px 0px"}}>
       <img className="author-image inline" src={post.fields.author.frontmatter.photo.publicURL} alt={post.fields.author.frontmatter.title} />
       <p className="inline text-bold keep-margin details-smaller">{post.fields.author.frontmatter.title}</p>
@@ -29,16 +30,17 @@ export const BlogPostTemplate = ({
   author,
   time,
   similar,
-  html
+  html,
+  slug
 }) => {
-  const twitterShare = `https://twitter.com/intent/tweet?url=#url&text=${title}&via=iscdelft&hashtags=${tags.join(",")}`;
+  const twitterShare = `https://twitter.com/intent/tweet?url=https://www.iscdelft.nl${slug}&text=${title}&via=iscdelft&hashtags=${tags.join(",")}`;
 
   const facebookShare = `http://www.facebook.com/sharer/sharer.php?u=#url&t=${title}`
   return (
       <div className="container is-fluid">
         <div className="spacer-md" />
         <div className="blog__detailed-container">
-          <img src={image} alt={title} />
+          <Img className="post-featured-image" sizes={image} />
           <p className="blog__detailed-title">{title}</p>
           <div>
             {tags &&
@@ -47,6 +49,9 @@ export const BlogPostTemplate = ({
           <div className="blog__detailed-meta">
             <div className="blog__detailed-author">
               <img
+                style={{
+                  marginRight: "10px"
+                }}
                 className="author-image inline"
                 src={author.frontmatter.photo.publicURL}
                 alt={author.frontmatter.title}
@@ -59,10 +64,10 @@ export const BlogPostTemplate = ({
           <div className="blog__detailed-description" dangerouslySetInnerHTML={{__html: html}} />
           <div className="blog__detailed-share">
             <p>Share:</p>
-            <a class="twitter__share-button" target="__blank" href={twitterShare}>
+            <a className="twitter__share-button" target="__blank" href={twitterShare}>
               <img src={twitter} alt="twitter" />
             </a>
-            <a class="facebook__share-button" target="__blank" href={facebookShare}>
+            <a className="facebook__share-button" target="__blank" href={facebookShare}>
               <img src={facebook} alt="facebook" />
             </a>
           </div>
@@ -78,18 +83,20 @@ export const BlogPostTemplate = ({
 };
 
 const BlogPost = ({ data }) => {
+  console.log(data.markdownRemark.frontmatter.featuredimage.childImageSharp.sizes)
   return (
     <Layout>
       <BlogPostTemplate
         id={data.markdownRemark.id}
         title={data.markdownRemark.frontmatter.title}
-        image={data.markdownRemark.frontmatter.featuredimage.publicURL}
+        image={data.markdownRemark.frontmatter.featuredimage.childImageSharp.sizes}
         author={data.markdownRemark.fields.author}
         tags={data.markdownRemark.frontmatter.tags}
         date={data.markdownRemark.frontmatter.date}
         time={data.markdownRemark.timeToRead}
         similar={data.markdownRemark.fields.author.fields.posts}
         html={data.markdownRemark.html}
+        slug={data.markdownRemark.fields.slug}
       />
     </Layout>
   );
@@ -114,6 +121,11 @@ export const pageQuery = graphql`
         date(formatString: "D MMMM, YYYY")
         featuredimage {
           publicURL
+          childImageSharp {
+            sizes(maxWidth: 2000) {
+              ...GatsbyImageSharpSizes
+            }
+          }
         }
         title
       }
