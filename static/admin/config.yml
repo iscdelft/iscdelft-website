@@ -1,11 +1,83 @@
 backend:
   name: git-gateway
   branch: master
+  publish_mode: editorial_workflow
 
 media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "bloggers"
+    label: "Bloggers"
+    folder: "src/pages/bloggers"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Nationality", name: "nationality", widget: "string", required: false}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Testimony", name: "testimony", widget: "text", required: false}
+
+  - name: "usefulLinks"
+    label: "Useful links"
+    folder: "src/pages/usefulLinks"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Find key", name: "findKey", widget: "hidden", default: "usefullinks"}
+      - {label: "URL", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+
+  - name: "events"
+    label: "Events"
+    folder: "src/pages/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Start time (HH:mm)", name: "starttime", widget: "string", required: false}
+      - {label: "End time (HH:mm)", name: "endtime", widget: "string", required: false}
+      - {label: "Venue", name: "venue", widget: "string", required: false}
+      - {label: "Quick description", name: "qdescription", widget: "text"}
+      - {label: "Information", name: "information", widget: "markdown", required: false}
+      - {label: "URL", name: "url", widget: "string", required: false}
+  
+  - name: "activities"
+    label: "Activities"
+    folder: "src/pages/activities"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "activity"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Day", name: "day", widget: "string"}
+      - {label: "Time (HH:mm)", name: "time", widget: "string", required: false}
+      - {label: "Venue", name: "venue", widget: "string", required: false}
+      - {label: "Quick description", name: "qdescription", widget: "text"}
+      - {label: "Contect", name: "body", widget: "markdown", required: false}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Blog Author"
+        name: "author"
+        widget: "relation"
+        collection: "bloggers"
+        searchFields: ["title"]
+        valueField: "title"
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+
   - name: "pages"
     label: "Pages"
     files:
@@ -15,4 +87,12 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
+          - {label: Daily Bible Reading, name: bibleReading, widget: text}
+          - {label: Song of the Week, name: songOfTheWeek, widget: string}
+      - file: "src/pages/community/index.md"
+        label: "Community"
+        name: "community"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "community"}
+          - {label: Introduction, name: title, widget: text}
+          - {label: More info, name: info, widget: text}

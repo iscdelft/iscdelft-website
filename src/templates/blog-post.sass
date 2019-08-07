@@ -1,0 +1,94 @@
+@import "~bulma"
+    
+.blog__detailed-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    .blog__detailed-title
+        font-size: 2em
+        font-weight: 700
+        margin: 20px
+        max-width: 700px
+    &>img
+        max-width: 700px
+        height: auto
+        min-height: 400px
+    .blog__detailed-tag
+        display: inline-block
+        border: 2px solid black
+        padding: 2px 5px
+        margin: 0px 20px 20px 20px
+        font-weight: 600
+    .blog__detailed-meta
+        display: flex
+        align-items: center
+        &>div,
+        &>p
+            font-weight: 600
+            margin: 30px
+            margin-bottom: 50px;
+    .blog__detailed-author
+        display: flex
+        align-items: center
+    .blog__detailed-share
+        width: 90%
+        max-width: 970px
+        display: flex
+        align-items: center
+        &>p
+            font-weight: 600
+        &>p,&>a 
+            margin: 10px
+
+    .blog__detailed-description
+        column-count: 2
+        column-gap: 50px
+        max-width: 970px
+        margin: 30px
+        white-space: pre-line
+
+.blog__preview-wrapper
+    display: flex
+    width: 100vw
+    overflow-x: auto
+.blog__preview-container
+    width: 30%
+    min-width: 300px
+    margin: 30px
+    .blog__preview-title
+        font-size: 1.2em
+        font-weight: 700
+        margin-bottom: 20px
+    .blog__preview-excerpt
+        margin-left: 20px
+    .details-smaller
+        font-size: 0.8em
+
++tablet-only
+    .blog__detailed-container
+        &>img
+            padding-top: 50px
+
++mobile
+    .blog__detailed-container
+        &>img
+            width: 100%
+            padding: 20px
+        .blog__detailed-tag
+            display: inline-block
+            border: 2px solid black
+            padding: 2px 5px
+            margin: 0px 10px 40px 10px
+            font-weight: 600
+        .blog__detailed-description
+            column-count: 1
+        .blog__detailed-meta
+            flex-direction: column
+            &>div,
+            &>p
+                margin: 5px
+            &>:last-child
+                margin-bottom: 30px
+            .blog__detailed-author
+                display: flex
+                align-items: center

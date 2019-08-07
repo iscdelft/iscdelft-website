@@ -1,10 +1,15 @@
 var proxy = require('http-proxy-middleware')
 
 module.exports = {
+  mapping: {
+    "MarkdownRemark.fields.author": "MarkdownRemark",
+    "MarkdownRemark.fields.posts": "MarkdownRemark",
+  },
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'ISC Delft',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'We gladly welcome you to ISC, to make the best of the days together in Delft! Our purpose is to create a loving community that international students can call second home while being away from their first home. Through our Sunday services and various activities, we bring students together, celebrate diversity, and strive to create peace by being in peace with ourselves and the people around us.',
+    keywords: ['Delft', 'English Service', 'Church Service']
   },
   plugins: [
     'gatsby-plugin-react-helmet',

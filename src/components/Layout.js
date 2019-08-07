@@ -1,5 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+import Content from '../components/Content'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
@@ -34,16 +37,27 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="mask-icon"
           href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
-          color="#ff4400"
+          color="#6f89e4"
         />
-        <meta name="theme-color" content="#fff" />
+        <link rel="manifest" href={`${withPrefix("/")}config/site.webmanifest`} />
 
-        <meta property="og:type" content="business.business" />
+        <meta name="theme-color" content="#6f89e4" />
+
+        <meta property="og:type" content="organisation" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
+        <meta property="og:image" content={`${withPrefix("/")}img/favicon-32x32.png`} />
       </Helmet>
-      <div>{children}</div>
+      <Navbar />
+      <div className="side-text">
+        <div />
+        <div>
+          <p>INTERNATIONAL</p>
+          <p>STUDENT CHAPLAINCY</p>
+        </div>
+      </div>
+      <Content>{children}</Content>
+      <Footer />
     </div>
   )
 }

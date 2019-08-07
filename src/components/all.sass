@@ -1,14 +1,62 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+html
+  min-width: 100vw
+
+html,
+body,
+ul,
+ol
+  margin:  0
+  padding: 0
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
+$primary: rgba(111,137,228,1)
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+
+.header-sm
+  font-size: 16px
+
+.header-md
+  font-size: 18px
+
+a.link-button
+  color: $primary !important
+
+.text-bold
+  font-weight: 600
+
+.keep-margin
+  margin: 10px
+
+.contain-wide-text
+  max-width: 800px !important
+  padding: 24px
+
+.author-image
+  height: 3em
+  width: 3em
+  border-radius: 50%
+
+.inline
+  display: inline-block
+
+.spacer
+  width: 100%
+  height: 120px
+
+.spacer-md
+  width: 100%
+  height: 160px
+
+.spacer-lg
+  width: 100%
+  height: 200px
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -71,6 +119,20 @@ $black: #2b2523
 .margin-top-0
   margin-top: 0 !important
 
+.navbar-cen
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  font-weight: 700
+
+.navbar > .container .navbar-menu,
+.container > .navbar .navbar-menu
+  margin: 0 !important
+
+.navbar-item
+  margin: 0 30px !important
+
 .navbar-item .icon
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
@@ -78,11 +140,22 @@ $black: #2b2523
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
+.navbar-brand .navbar-item
   padding: 0 1rem
 footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
+  position: relative
+  background-color: $primary
+  display: flex
+  align-items: center
+  padding: 20px 20px
+  .footer-copyright
+    position: absolute
+    color: white
+    font-weight: 600
+  .footer-social
+    margin: auto
+    img
+      margin: 0px 20px
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -114,13 +187,111 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
+
+.split-container
+  width: 50%
+  position: relative
+  display: flex 
+  align-items: center
+  justify-content: center
+  .title-divider
+    width: 100%
+    height: 1px
+    background-color: black
+    margin: 30px
+  .split-title
+    font-weight: 900
+    font-size: 1.2em
+    position: absolute
+    padding: 10px 20px
+    background-color: white
+
+.search-container
+  margin: 20px
+  border-bottom: 1px solid rgba(213,213,213,1)
+  height: 25px
+  max-width: 170px
+  .search-input
+    border: none
+    &:focus
+      outline: none
+    &::placeholder
+      font-size: 1.3em
+      font-weight: 600
+      color: rgba(213,213,213,1)
+      padding: 0px 20px
+  .search-button
+    border: none
+    padding: 0px 10px
+
+.center-children
+  display: flex
+  justify-content: center
+
+.article-roll
+    padding: 80px
+    &>div
+      width: 33%
+      display: inline-block
+      vertical-align: top
+      padding: 20px
+      .article-header
+        margin-bottom: 20px
+      .article-info
+        margin: 20px 0px 70px 0px
+        &>img, &>p 
+          display: inline-block
+          margin-right: 10px
+          vertical-align: middle
+
+.show-more
+  width: 100%
+  display: flex
+  justify-content: center
+  button
+    max-width: 200px
+    color: $primary
+    border: none
+    font-size: 1em
+    margin: 10px 0px 50px 0px
+    cursor: pointer
+    border-bottom: 2px solid $primary
+    &:focus
+      outline: none
+
+.side-text
+  position: absolute
+  transform: rotate(-90deg)
+  top: 60vh
+  left: calc(10% - 250px)
+  &>div:first-child
+    border-bottom: 3px solid black
+    width: 150px
+    padding: 0px
+  &>div
+    display: inline-block
+    vertical-align: middle
+    padding: 20px
+    &>p 
+      font-size: 1.5em
+      font-weight: 900
+
+.link-container
+    display: flex
+    padding: 24px
+    &>a
+        color: grey
+        margin-right: 50px
+    &>p
+        display: inline-block
+        color: black
 
 
 @import "~bulma"
@@ -129,12 +300,71 @@ $menu-label-color: $white-ter
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
+  .article-roll
+    padding: 24px
+    &>div
+      width: 50%
+  .side-text
+    transform: rotate(0deg)
+    top: 100px
+    left: -50px
+    &>div:first-child
+      border-bottom: 2px solid black
+
+    &>div
+      &>p 
+        font-size: 1.3em
+        font-weight: 800
 
 +mobile
+  .link-container
+    flex-direction: column
+  .split-container
+    width: 90%
+  .spacer
+    height: 10px
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
+  footer.footer
+    flex-direction: column
+    padding: 10px
+    height: 100px
+    .footer-social
+      margin: 10px
+    .footer-copyright
+      bottom: 10px
+  .spacer
+    width: 100%
+    height: 80px
+
+  .spacer-md
+    width: 100%
+    height: 140px
+
+  .spacer-lg
+    width: 100%
+    height: 160px
+  
+  .article-roll
+    padding: 24px
+    &>div
+      width: 100%
+      padding: 0px
+
+  .side-text
+    transform: rotate(0deg)
+    top: 100px
+    left: -120px
+    &>div:first-child
+      border-bottom: 2px solid black
+
+    &>div
+      &>p 
+        font-size: 1.1em
+        font-weight: 800
+    

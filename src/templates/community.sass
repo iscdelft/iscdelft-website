@@ -1,0 +1,30 @@
+@import "~bulma"
+
+.blog-description
+    max-width: 800px
+    font-weight: 600
+    &>p
+        margin-bottom: 20px
+    &>p:first-child
+        margin-top: 100px
+
+.testimony-container
+    display: inline-block
+    vertical-align: top
+    width: 50%
+    padding: 5%
+    .testimony-info
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        &>p 
+            border-bottom: 1px solid black
+            margin-left: 20px
+            padding-left: 10px
+            padding-right: 40px
+    &>p 
+        font-size: 0.8em
+
++mobile
+    .testimony-container
+        width: 100%
