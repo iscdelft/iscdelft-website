@@ -1,7 +1,7 @@
 ---
 templateKey: activity
 title: Choir Practice
-day: Wednesday
+day: Wednesday or Sunday
 time: '20:00'
 venue: One of the choir member's house
 qdescription: >-
