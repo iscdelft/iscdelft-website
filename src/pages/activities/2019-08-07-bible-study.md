@@ -2,7 +2,7 @@
 templateKey: activity
 title: Bible study
 day: Thursday
-time: '20:00'
+time: '18:30'
 venue: 'Voorstraat 60, Delft'
 qdescription: >-
   During our bible study, we try to understand what message the Bible conveys
