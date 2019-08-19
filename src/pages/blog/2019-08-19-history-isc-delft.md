@@ -4,6 +4,8 @@ title: History ISC Delft
 featuredimage: /img/raamstraat.jpg
 date: 2019-08-19T15:24:27.364Z
 author: Mohan Radhakrishnan
+tags:
+  - history
 ---
 If you go to the Raamstraat church on Sundays 11:30 AM, you will meet many students from different countries, following different studies, and from different Christian denominations. All of them, despite their differences, worship together the Christian faith. Every 1<sup>st</sup> and 3<sup>rd</sup> Sunday of the month we can listen to the Catholic priest fr. Avin from India. On the 2<sup>nd</sup> and 4<sup>th</sup> Sunday of the months Rev. Waltraut, a Protestant priest from Germany, leads the service. <!--more-->
 
