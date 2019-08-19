@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: The Little Things That Matter
+featuredimage: /img/x33.jpg
 date: 2017-02-13T17:12:00.000Z
 author: Gisbertus Hermans
 tags:
