@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: History ISC Delft
 featuredimage: /img/raamstraat.jpg
-date: 2019-08-19T15:24:27.364Z
+date: 2016-09-14T15:24:00.000Z
 author: Mohan Radhakrishnan
 tags:
   - history
