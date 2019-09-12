@@ -1,8 +1,7 @@
 ---
 templateKey: blog-post
 title: ISC Last Financial Statement 2018
-featuredimage: >-
-  /img/kisspng-financial-statement-finance-report-organization-bu-5b25c872bac2b1.107503081529202802765.jpg
+featuredimage: ''
 date: 2019-09-11T22:00:00.000Z
 author: Gisbertus Hermans
 tags:
