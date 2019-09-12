@@ -15,6 +15,4 @@ tags:
 ---
 If you want to donate to ISC, use the bank account that appears in the financial statement, and specify that the donation is for ISC Delft.
 
-
-
 ![](/img/financial-statement.png)
