@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children, landing }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content={keywords.join(",")} />
+        {keywords && <meta name="keywords" content={keywords.join(",")} />}
 
         <link
           rel="apple-touch-icon"
