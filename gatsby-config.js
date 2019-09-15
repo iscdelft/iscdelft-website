@@ -9,7 +9,7 @@ module.exports = {
     title: 'ISC Delft',
     description:
       'We gladly welcome you to ISC, to make the best of the days together in Delft! Our purpose is to create a loving community that international students can call second home while being away from their first home. Through our Sunday services and various activities, we bring students together, celebrate diversity, and strive to create peace by being in peace with ourselves and the people around us.',
-    keywords: ['Delft', 'English Service', 'Church Service']
+    keywords: ['Delft', 'English Service', 'Church Service', 'ISC Delft', 'English Mass in Delft', 'Student Church in Delft', 'Catholic Church in Delft', 'Protestant Church in Delft', 'English Service in Delft']
   },
   plugins: [
     'gatsby-plugin-react-helmet',
