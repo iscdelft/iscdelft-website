@@ -93,7 +93,7 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         id={data.markdownRemark.id}
         title={data.markdownRemark.frontmatter.title}
-        image={data.markdownRemark.frontmatter.featuredimage.childImageSharp.sizes}
+        image={data.markdownRemark.frontmatter.featuredimage && data.markdownRemark.frontmatter.featuredimage.childImageSharp.sizes}
         author={data.markdownRemark.fields.author}
         tags={data.markdownRemark.frontmatter.tags}
         date={data.markdownRemark.frontmatter.date}
