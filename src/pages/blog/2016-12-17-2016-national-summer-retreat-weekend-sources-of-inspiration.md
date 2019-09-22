@@ -8,13 +8,6 @@ author: Mathew Jose Alani
 tags:
   - retreat
   - Heiloo
-  - history ISC Delft
-  - ISC Delft
-  - English Mass in Delft
-  - Student Church in Delft
-  - Catholic Church in Delft
-  - Protestant Church in Delft
-  - English Service in Delft
 ---
 The national summer weekend retreat organised by ISC Delft community, with the theme **_“Sources of Inspiration”_**, was attended by people from eight countries, during the second weekend of July. The main purpose of the retreat was to encourage the participants to introspect and search for their sources of inspiration which reminds us about the unconditional love of God in our hectic lives. The pilgrimage centre at Heiloo, near Alkmaar, provided the perfect surrounding with its lush greenery and serenity.<!--more-->
 
