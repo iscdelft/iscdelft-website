@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Content from '../components/Content'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from "gatsby"
+import { withPrefix, graphql } from "gatsby"
 
 const TemplateWrapper = ({ children, landing }) => {
   const { title, description, keywords } = useSiteMetadata()
@@ -15,7 +15,8 @@ const TemplateWrapper = ({ children, landing }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        {keywords && <meta name="keywords" content={keywords.join(",")} />}
+        <meta name="author" content="ISC Delft" />
+        <meta name="keywords" content={keywords.join(",")} />
 
         <link
           rel="apple-touch-icon"
@@ -62,5 +63,17 @@ const TemplateWrapper = ({ children, landing }) => {
     </div>
   )
 }
+
+export const communityPageQuery = graphql`
+  query KeywordPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        info
+      }
+    }
+  }
+`;
 
 export default TemplateWrapper

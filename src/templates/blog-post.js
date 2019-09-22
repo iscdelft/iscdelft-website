@@ -1,5 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from 'react-helmet'
+
 import Img from 'gatsby-image'
 import Layout from "../components/Layout";
 import "./blog-post.sass";
@@ -38,6 +40,9 @@ export const BlogPostTemplate = ({
   const facebookShare = `http://www.facebook.com/sharer/sharer.php?u=#url&t=${title}`
   return (
       <div className="container is-fluid">
+        <Helmet>
+          <meta name="keywords" content={tags.join(",")} />
+        </Helmet>
         <div className="spacer-md" />
         <div className="blog__detailed-container">
           <Img className="post-featured-image" sizes={image} />
