@@ -38,10 +38,13 @@ export const BlogPostTemplate = ({
   const twitterShare = `https://twitter.com/intent/tweet?url=https://www.iscdelft.nl${slug}&text=${title}&via=iscdelft&hashtags=${tags.join(",")}`;
 
   const facebookShare = `http://www.facebook.com/sharer/sharer.php?u=#url&t=${title}`
+
+  const keywords = `${tags.join(",")},${title}`
+
   return (
       <div className="container is-fluid">
         <Helmet>
-          <meta name="keywords" content={tags.join(",")} />
+          <meta name="keywords" content={keywords} />
         </Helmet>
         <div className="spacer-md" />
         <div className="blog__detailed-container">
