@@ -5,12 +5,7 @@ featuredimage: ''
 date: 2019-09-11T22:00:00.000Z
 author: Gisbertus Hermans
 tags:
-  - English Service in Delft
-  - Catholic Church in Delft
-  - English Mass in Delft
-  - English Protestant Church in Delft
   - Young Catholic Community in Delft
-  - Church in Delft
 ---
 If you want to donate to ISC, use the bank account that appears in the financial statement, and specify that the donation is for ISC Delft.
 

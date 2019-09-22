@@ -7,12 +7,6 @@ author: Gisbertus Hermans
 tags:
   - history
   - history ISC Delft
-  - ISC Delft
-  - English Mass in Delft
-  - Student Church in Delft
-  - Catholic Church in Delft
-  - Protestant Church in Delft
-  - English Service in Delft
 ---
 This is a third part of the series on ISC Delft's history. Click <a href="https://www.iscdelft.nl/blog/2019-08-19-the-start-of-isc-delft/">here</a> to read the first part, and <a href="https://www.iscdelft.nl/blog/2019-08-19-challenges-and-changes/">here</a> for the second part. <!--more-->
 
