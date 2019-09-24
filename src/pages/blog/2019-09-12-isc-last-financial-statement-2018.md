@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: ISC Last Financial Statement 2018
-featuredimage: ''
+featuredimage: /img/android-chrome-192x192.png
 date: 2019-09-11T22:00:00.000Z
 author: Gisbertus Hermans
 tags:
