@@ -1,6 +1,6 @@
 ---
 templateKey: activity
-title: Sunday Service in English
+title: Sunday Service in English Delft
 day: Sunday
 time: '11:30'
 venue: Raamstraat 76
