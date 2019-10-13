@@ -5,7 +5,9 @@ featuredimage: /img/img_2567.jpg
 date: 2016-10-21T15:57:00.000Z
 author: Gisbertus Hermans
 tags:
-  - history ISC Delft
+  - Mass in English Delft
+  - Protestant Service in Delft
+  - Ecumenical Community in Delft
 ---
 If you missed our introduction to this interview, you can read it <a href="https://www.iscdelft.nl/blog/2019-08-19-history-isc-delft/">here</a>.
 
