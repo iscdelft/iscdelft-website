@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: International Student Church
+title: English Service in Delft
 bibleReading: >-
   My guilt has overwhelmed me like a burden too heavy to bear. In you, Lord, I
   put my hope; you, Lord my God, will give answer. (Psalms 38)
