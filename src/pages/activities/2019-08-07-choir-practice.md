@@ -1,6 +1,6 @@
 ---
 templateKey: activity
-title: Choir Practice
+title: Choir Practice - Sunday Service in Delft
 day: Wednesday or Sunday
 time: '20:00'
 venue: One of the choir member's house
