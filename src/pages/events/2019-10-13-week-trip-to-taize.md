@@ -1,6 +1,6 @@
 ---
 templateKey: event
-title: 'Week trip to Taize '
+title: Week Trip to Taize
 date: 2019-10-13T13:07:29.201Z
 starttime: 20-10-2019
 endtime: 27-10-2019
