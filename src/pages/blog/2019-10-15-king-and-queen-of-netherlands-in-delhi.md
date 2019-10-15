@@ -7,9 +7,7 @@ author: Francesco Messali
 tags:
   - ISC Member with Dutch king and queen in India
 ---
-Mohan has been a loyal f ISC member since many years ago. He was honored to be part of the five-day state visit to India  of the King and Queen of Netherlands in Delhi. After touching down in New Delhi, the King and Qeen Willem-Alexander and Maxima were welcome by president Ram Nath Kovind and prime minister Narendra Modi, and Mohan was part of this special moment in Dheli.
-
-
+Mohan has been a loyal f ISC member since many years ago. He was honored to be part of the five-day state visit to India  of the King and Queen of Netherlands in Delhi. After touching down in New Delhi, the King and Qeen Willem-Alexander and Maxima were welcome by president Ram Nath Kovind and prime minister Narendra Modi, and Mohan was part of this special moment in Delhi.
 
 ![](/img/queen_king_nl.jpg)
 
