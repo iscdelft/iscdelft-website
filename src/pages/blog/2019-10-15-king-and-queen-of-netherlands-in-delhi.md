@@ -3,7 +3,7 @@ templateKey: blog-post
 title: King and Queen of Netherlands in Delhi
 featuredimage: /img/queen_king_nl.jpg
 date: 2019-10-15T19:57:21.181Z
-author: Francesco Messali
+author: Elsa Turcios
 tags:
   - ISC Member with Dutch king and queen in India
 ---
