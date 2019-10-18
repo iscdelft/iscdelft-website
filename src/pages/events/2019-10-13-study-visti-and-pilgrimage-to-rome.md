@@ -1,6 +1,6 @@
 ---
 templateKey: event
-title: Study visti and pilgrimage to Rome
+title: Study visit and pilgrimage to Rome
 date: 2019-10-23T22:00:00.000Z
 starttime: 10/27/2019
 qdescription: >-
