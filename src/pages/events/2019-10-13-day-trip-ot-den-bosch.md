@@ -10,5 +10,8 @@ qdescription: >-
 information: >-
   Please contact Fr. Avin, SVD : ispavin@gmail.com or Reverend Taco Smit
   tacosiccosmit@gmail.com to register to the activity.
+
+
+  ![](/img/denbosch.png)
 ---
 
