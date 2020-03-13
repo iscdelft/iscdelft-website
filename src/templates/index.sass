@@ -9,6 +9,15 @@
     height: 800px
     top: 75vh
     z-index: -1
+  article
+    max-width: 500px
+    position: absolute
+    bottom: 100px
+    background-color: rgba(#ff8181, 0.9)
+    border-radius: 5px
+    padding: 20px
+    // margin: 30px
+    color: black
 
 .landing-general-info
   &>p:first-child
@@ -54,6 +63,10 @@
     justify-content: flex-start
   
 +mobile 
+  .landing-cover
+    article
+      margin: 20px 20px 20px 0px
+      bottom: 50px
   .card-scroll
     justify-content: flex-start
     

@@ -43,6 +43,12 @@ const IndexPage = ({ data }) => {
           fontWeight: "600"
         }}>HOME AWAY<br />FROM HOME</p>
         <div className="landing-svg-mobile" />
+        <article>
+          Due to the corona-virus the Sunday mass in the chapel at 11:30 hours has been cancelled for the coming weeks. We will let you know when they recommence.
+          <br />
+          <br />
+          - The ISC committee
+        </article>
       </section>
       <section className="container contain-wide-text landing-general-info">
         <p>
