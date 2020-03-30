@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
         }}>HOME AWAY<br />FROM HOME</p>
         <div className="landing-svg-mobile" />
         <article>
-          We hope everyone is safe and well. Since we cannot have any public gatherings we thought we would bring the Sunday service to you. Join us in our online services every Sunday 11:30am via the link below. (First and third Sunday Catholic service and second and fourth protestant)
+          We hope everyone is safe and well. Since we cannot have any public gatherings we thought we would bring the Sunday service to you. Join us in our online services every Sunday 11:30am (CET) via the link below. (First and third Sunday Catholic service and second and fourth protestant)
           <br />
           <br />
           <a href="https://vcr-001-bbb.aperture-labs.org/b/els-ezf-tk7">https://vcr-001-bbb.aperture-labs.org/b/els-ezf-tk7</a>
