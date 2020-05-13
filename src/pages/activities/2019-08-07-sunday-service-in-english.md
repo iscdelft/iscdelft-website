@@ -3,7 +3,7 @@ templateKey: activity
 title: Sunday Service in English Delft
 day: Sunday
 time: '11:30'
-venue: Raamstraat 76
+venue: Online
 qdescription: >-
   This is where we pray on Sundays, this is where students from many nations
   discover that they are not alone in a strange land, this is what we have been
