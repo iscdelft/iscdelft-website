@@ -35,11 +35,11 @@ export const BlogPostTemplate = ({
   html,
   slug
 }) => {
-  const twitterShare = `https://twitter.com/intent/tweet?url=https://www.iscdelft.nl${slug}&text=${title}&via=iscdelft&hashtags=${tags.join(",")}`;
+  const twitterShare = `https://twitter.com/intent/tweet?url=https://www.iscdelft.nl${slug}&text=${title}&via=iscdelft&hashtags=${tags && tags.join(",")}`;
 
   const facebookShare = `http://www.facebook.com/sharer/sharer.php?u=#url&t=${title}`
 
-  const keywords = `${tags.join(",")},${title}`
+  const keywords = `${tags && tags.join(",")},${title}`
 
   return (
       <div className="container is-fluid">

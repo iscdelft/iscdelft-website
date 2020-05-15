@@ -1,11 +1,11 @@
 ---
 templateKey: activity
 title: Choir Practice - Sunday Service in Delft
-day: Wednesday or Sunday
-time: '20:00'
-venue: One of the choir member's house
+day: Saturdays
+time: '19:00'
+venue: Online
 qdescription: >-
-  On Wednesday evenings we have choir practices in one of the choir members
+  On Saturday evenings we have choir practices in one of the choir members
   house. It is a chance for us to take a break away from the routines of the
   week and relax and enjoy some good songs. Sometimes one of us will surprise
   the rest with a new song from their country. This often goes into the choir
