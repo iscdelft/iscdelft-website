@@ -6,6 +6,7 @@ featuredpost: false
 date: 2020-08-30T11:05:21.462Z
 author: Elsa Turcios
 tags:
+  - Mass in English Delft
   - English Service in Delft
   - Catholic Service in English Delft
   - Protestant Service in English Delft
