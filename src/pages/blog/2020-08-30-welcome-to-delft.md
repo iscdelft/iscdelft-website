@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Welcome to Delft
+featuredimage: /img/isc.png
 featuredpost: false
 date: 2020-08-30T11:05:21.462Z
 author: Elsa Turcios
