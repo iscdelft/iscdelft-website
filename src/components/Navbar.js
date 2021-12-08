@@ -85,6 +85,9 @@ const Navbar = class extends React.Component {
               <Link activeStyle={{ color: 'rgba(111,137,228,1)' }} className="navbar-item" to="/contact">
                 Contact
               </Link>
+              <Link activeStyle={{ color: 'rgba(111,137,228,1)' }} className="navbar-item" to="/anbi">
+                ANBI
+              </Link>
             </div>
           </div>
         </div>
