@@ -13,7 +13,9 @@ const ANBI = () => (
         Financial Statements:
       </p>
       <a className="link-button" target="_blank" href={financialStatement1}>Boekjaar 2020 Stichting Internationaal Studenten Pastoraat</a>
+      <br />
       <a className="link-button" target="_blank" href={financialStatement2}>Boekjaar 2021 Stichting Internationaal Studenten Pastoraat</a>
+      <br />
       <a className="link-button" target="_blank" href={financialStatement3}>Boekjaar 2022 Stichting Internationaal Studenten Pastoraat</a>
     </div>
   </Layout>
